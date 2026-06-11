@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(ua)) {
+            window.location.replace("https://play.google.com/store/apps/details?id=com.bb.psm&pcampaignid=web_share");
+        } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+            window.location.replace("https://apps.apple.com/in/app/pristine-super-market/id6758688702");
+        } else {
+            window.location.replace("https://play.google.com/store/apps/details?id=com.bb.psm&pcampaignid=web_share");
+        }
+    </script>
+</head>
+<body>
+    Redirecting to Pristine Super Market App...
+</body>
+</html>
